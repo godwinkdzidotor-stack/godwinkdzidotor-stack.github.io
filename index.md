@@ -1,6 +1,7 @@
 ---
 layout: default
-title: " "
+title: ""
+permalink: /
 ---
 
 <!-- =============================== -->
@@ -38,11 +39,11 @@ title: " "
 
   <!-- Navigation -->
   <p style="font-size: 1.1rem; margin-top: 10px;">
-    <a href="index.md" style="color:#58a6ff; margin: 0 12px;">Home</a>
-    <a href="projects.md" style="color:#58a6ff; margin: 0 12px;">Projects</a>
-    <a href="skills.md" style="color:#58a6ff; margin: 0 12px;">Skills</a>
-    <a href="about.md" style="color:#58a6ff; margin: 0 12px;">About</a>
-    <a href="contact.md" style="color:#58a6ff; margin: 0 12px;">Contact</a>
+    <a href="/" style="color:#58a6ff; margin: 0 12px;">Home</a>
+    <a href="/projects" style="color:#58a6ff; margin: 0 12px;">Projects</a>
+    <a href="/skills" style="color:#58a6ff; margin: 0 12px;">Skills</a>
+    <a href="/about" style="color:#58a6ff; margin: 0 12px;">About</a>
+    <a href="/contact" style="color:#58a6ff; margin: 0 12px;">Contact</a>
   </p>
 
 </div>
