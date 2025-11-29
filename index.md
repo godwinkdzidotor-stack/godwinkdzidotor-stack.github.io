@@ -108,7 +108,9 @@ https://github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform
 ---
 
 ## 🧪 Security Automation & DevSecOps
-
+<table>
+  <tr>
+    <td width="50%" valign="top">
 
 <h3>🟠 Linux Security Hardening with Ansible</h3>
 
