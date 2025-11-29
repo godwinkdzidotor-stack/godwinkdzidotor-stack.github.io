@@ -4,15 +4,16 @@
 - DevSecOps
 - Bandit SAST
 - IAM, Zero Trust
-- Network defense
-- Vulnerability management
+- Network Defense
+- Vulnerability Management
 
 ## Cloud & Infrastructure
 - AWS
+- Azure
 - Terraform
 - Ansible
 - Docker
-- Kubernetes (optional future)
+- Kubernetes
 
 ## Programming & Automation
 - Python
