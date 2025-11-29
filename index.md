@@ -101,15 +101,7 @@ A production-style AWS VPC with:
 https://github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform
 </p>
 
-       </td>
-  </tr>
-</table>
-
----
-
-## 🧪 Security Automation & DevSecOps
-<table>
-  <tr>
+    </td>
     <td width="50%" valign="top">
 
 <h3>🟠 Linux Security Hardening with Ansible</h3>
@@ -189,4 +181,4 @@ https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd
 
     </td>
   </tr>
-</t
+</table>
