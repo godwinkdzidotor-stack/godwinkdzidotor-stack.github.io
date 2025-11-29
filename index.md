@@ -48,32 +48,6 @@ title: Home
 </div>
 
 
-  <h1 style="color:#e6edf3;font-size:2.4rem;margin-bottom:0.3rem;">🔐 Godwin K. Dzidotor, PhD</h1>
-  <h3 style="color:#c9d1d9;margin-top:0;">Cybersecurity Engineer • DevSecOps • Cloud Security • Network Security</h3>
-
-  <p style="color:#8b949e;max-width:640px;margin:0 auto 16px;">
-    Building secure, automated, and resilient systems at the intersection of cybersecurity, cloud, and infrastructure engineering.
-  </p>
-
-  <!-- Badges row -->
-  <p>
-    <img src="https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd/actions/workflows/devsecops.yml/badge.svg" alt="DevSecOps CI/CD" />
-    <img src="https://img.shields.io/badge/Bandit-SAST%20Scan-green?logo=python&logoColor=white" alt="Bandit SAST" />
-    <img src="https://img.shields.io/badge/Docker-Builds%20Clean-blue?logo=docker&logoColor=white" alt="Docker builds clean" />
-  </p>
-
-<!-- Quick nav -->
-<p align="center">
-  <a href="index.md"><b>Home</b></a> •
-  <a href="projects.md">Projects</a> •
-  <a href="skills.md">Skills</a> •
-  <a href="about.md">About</a> •
-  <a href="contact.md">Contact</a>
-</p>
-
-</div>
-
----
 
 # 🔐 Portfolio Overview
 
