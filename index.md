@@ -54,7 +54,7 @@ permalink: /
      Connect on LinkedIn
   </a>
 
-  <!-- 🔗 Portfolio microsites (NEW) -->
+  <!-- 🔗 Portfolio microsites -->
   <div style="margin-top: 18px;">
     <a href="https://godwinkdzidotor-stack.github.io/Network-Engineering-Projects/"
        target="_blank" rel="noopener noreferrer"
@@ -68,6 +68,37 @@ permalink: /
        style="display:inline-block; padding:10px 16px; margin:6px; border-radius:8px;
               background:#64748b; color:white; text-decoration:none; font-weight:600;">
        🛡️ RMF Portfolio
+    </a>
+  </div>
+
+  <!-- Additional repo microsites -->
+  <div style="margin-top: 8px;">
+    <a href="https://godwinkdzidotor-stack.github.io/devsecops-python-ci-cd/"
+       target="_blank" rel="noopener noreferrer"
+       style="display:inline-block; padding:10px 16px; margin:6px; border-radius:8px;
+              background:#7c3aed; color:white; text-decoration:none; font-weight:600;">
+       ⚙️ DevSecOps Python CI/CD
+    </a>
+
+    <a href="https://godwinkdzidotor-stack.github.io/python-network-automation/"
+       target="_blank" rel="noopener noreferrer"
+       style="display:inline-block; padding:10px 16px; margin:6px; border-radius:8px;
+              background:#0f766e; color:white; text-decoration:none; font-weight:600;">
+       🧪 Python Network Automation
+    </a>
+
+    <a href="https://godwinkdzidotor-stack.github.io/ansible-security-hardening/"
+       target="_blank" rel="noopener noreferrer"
+       style="display:inline-block; padding:10px 16px; margin:6px; border-radius:8px;
+              background:#b45309; color:white; text-decoration:none; font-weight:600;">
+       🛠️ Ansible Security Hardening
+    </a>
+
+    <a href="https://godwinkdzidotor-stack.github.io/aws-secure-vpc-terraform/"
+       target="_blank" rel="noopener noreferrer"
+       style="display:inline-block; padding:10px 16px; margin:6px; border-radius:8px;
+              background:#15803d; color:white; text-decoration:none; font-weight:600;">
+       ☁️ AWS Secure VPC (Terraform)
     </a>
   </div>
 
