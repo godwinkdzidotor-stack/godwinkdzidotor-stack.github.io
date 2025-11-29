@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Skills
+permalink: /skills
 ---
+
 
 <!-- ============================= -->
 <!--    SKILLS PAGE — PRO MAX     -->
