@@ -1,6 +1,6 @@
 # 👨‍💼 About Me
 
-I am a Cybersecurity Engineer specializing in secure automation, cloud security, and DevSecOps.
+I am a Cybersecurity Engineer specialized in secure automation, cloud security, and DevSecOps.
 
 My background includes:
 - Cloud infrastructure engineering
