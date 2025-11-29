@@ -45,6 +45,15 @@ permalink: /
     <a href="/about" style="color:#58a6ff; margin: 0 12px;">About</a>
     <a href="/contact" style="color:#58a6ff; margin: 0 12px;">Contact</a>
   </p>
+  
+  <p style="margin-top: 6px; font-size: 0.95rem;">
+    <a href="https://www.linkedin.com/in/godwink-dzidotor-phd"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="color:#c9d1d9; text-decoration: underline;">
+      Connect with me on LinkedIn
+    </a>
+  </p>
 
 </div>
 
