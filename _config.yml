@@ -1,0 +1,9 @@
+# Remove the auto-generated GitHub Pages header
+title: ""
+description: ""
+
+# Explicitly set the theme so GitHub Pages builds correctly
+theme: jekyll-theme-cayman
+
+# Disable sidebar/header elements
+show_downloads: false
