@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Contact
+permalink: /contact
 ---
+
 
 <!-- ============================= -->
 <!--   CONTACT PAGE — PRO MAX     -->
