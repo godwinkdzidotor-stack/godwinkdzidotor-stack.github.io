@@ -54,6 +54,23 @@ permalink: /
      Connect on LinkedIn
   </a>
 
+  <!-- 🔗 Portfolio microsites (NEW) -->
+  <div style="margin-top: 18px;">
+    <a href="https://godwinkdzidotor-stack.github.io/Network-Engineering-Projects/"
+       target="_blank" rel="noopener noreferrer"
+       style="display:inline-block; padding:10px 16px; margin:6px; border-radius:8px;
+              background:#0ea5e9; color:white; text-decoration:none; font-weight:600;">
+       🌐 Network Engineering Projects
+    </a>
+
+    <a href="https://godwinkdzidotor-stack.github.io/Risk-Management-Framework-Portfolio/"
+       target="_blank" rel="noopener noreferrer"
+       style="display:inline-block; padding:10px 16px; margin:6px; border-radius:8px;
+              background:#64748b; color:white; text-decoration:none; font-weight:600;">
+       🛡️ RMF Portfolio
+    </a>
+  </div>
+
 </div>
 
 
