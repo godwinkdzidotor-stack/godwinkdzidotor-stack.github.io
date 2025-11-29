@@ -191,3 +191,50 @@
     padding: 4px 8px;
   }
 }
+
+/* ===========================
+   GLOW PILL BUTTONS
+   =========================== */
+
+.glow-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.glow-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: inherit;
+  opacity: 0;
+  filter: blur(14px);
+  transition: 0.25s ease;
+  z-index: -1;
+}
+
+.glow-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(255,255,255,0.18);
+}
+
+.glow-btn:hover::after {
+  opacity: 0.8;
+  transform: scale(1.10);
+}
+
+/* Color variants */
+.glow-blue    { background: #0ea5e9; color:white; }
+.glow-gray    { background: #64748b; color:white; }
+.glow-purple  { background: #7c3aed; color:white; }
+.glow-indigo  { background: #1d4ed8; color:white; }
+.glow-orange  { background: #b45309; color:white; }
+.glow-green   { background: #15803d; color:white; }
+.glow-linkedin { background:#0077b5; color:white; }
