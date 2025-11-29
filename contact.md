@@ -17,13 +17,14 @@ permalink: /contact
 </div>
 
 <!-- Navigation -->
-<p align="center" style="font-size:0.95rem;">
-  <a href="index.md" style="margin:0 12px;">Home</a> •
-  <a href="projects.md" style="margin:0 12px;">Projects</a> •
-  <a href="skills.md" style="margin:0 12px;">Skills</a> •
-  <a href="about.md" style="margin:0 12px;">About</a> •
-  <a href="contact.md" style="margin:0 12px;font-weight:bold;">Contact</a>
+<p style="font-size: 1.1rem; margin-top: 10px;">
+  <a href="/" style="color:#58a6ff; margin: 0 12px;">Home</a>
+  <a href="/projects" style="color:#58a6ff; margin: 0 12px;">Projects</a>
+  <a href="/skills" style="color:#58a6ff; margin: 0 12px;">Skills</a>
+  <a href="/about" style="color:#58a6ff; margin: 0 12px;">About</a>
+  <a href="/contact" style="color:#58a6ff; margin: 0 12px;">Contact</a>
 </p>
+
 
 ---
 
