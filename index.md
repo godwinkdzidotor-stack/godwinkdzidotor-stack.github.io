@@ -47,13 +47,12 @@ permalink: /
   </p>
   
   <a href="https://www.linkedin.com/in/godwin-k-dzidotor-phd-36096a234/" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   style="display:inline-block; background:#0077b5; color:white; padding:8px 16px; 
-          border-radius:6px; text-decoration:none; font-weight:bold;">
-   Connect on LinkedIn
-</a>
-
+     target="_blank" 
+     rel="noopener noreferrer"
+     style="display:inline-block; background:#0077b5; color:white; padding:8px 16px; 
+            border-radius:6px; text-decoration:none; font-weight:bold;">
+     Connect on LinkedIn
+  </a>
 
 </div>
 
@@ -97,8 +96,12 @@ A production-style AWS VPC with:
 </ul>
 
 <strong>Stack:</strong> Terraform • AWS • VPC Security<br>
-<strong>Repo:</strong><br>
-https://github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform
+<strong>Repo:</strong>
+<a href="https://github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform"
+   target="_blank" 
+   rel="noopener noreferrer">
+   github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform
+</a>
 </p>
 
     </td>
@@ -122,7 +125,7 @@ Automated OS-level hardening:
    rel="noopener noreferrer">
    github.com/godwinkdzidotor-stack/ansible-security-hardening
 </a>
-
+</p>
 
     </td>
   </tr>
@@ -153,8 +156,12 @@ Useful for:
 </ul>
 
 <strong>Stack:</strong> Python • Networking • CSV parsing<br>
-<strong>Repo:</strong><br>
-https://github.com/godwinkdzidotor-stack/python-network-automation
+<strong>Repo:</strong>
+<a href="https://github.com/godwinkdzidotor-stack/python-network-automation"
+   target="_blank" 
+   rel="noopener noreferrer">
+   github.com/godwinkdzidotor-stack/python-network-automation
+</a>
 </p>
 
     </td>
@@ -179,8 +186,12 @@ Includes:
 </ul>
 
 <strong>Stack:</strong> GitHub Actions • Bandit • Docker<br>
-<strong>Repo:</strong><br>
-https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd
+<strong>Repo:</strong>
+<a href="https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd"
+   target="_blank" 
+   rel="noopener noreferrer">
+   github.com/godwinkdzidotor-stack/devsecops-python-ci-cd
+</a>
 </p>
 
     </td>
