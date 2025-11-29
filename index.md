@@ -76,36 +76,42 @@ Each project includes **real code**, **pipelines**, **security outputs**, and **
   <tr>
     <td width="50%" valign="top">
 
-### 🟠 Secure AWS VPC with Terraform
+<h3>🟠 Secure AWS VPC with Terraform</h3>
 
+<p>
 A production-style AWS VPC with:
-- Public & private subnets
-- NAT gateway & route tables
-- Security group and NACL hardening
-- Baseline network segmentation
+<ul>
+  <li>Public & private subnets</li>
+  <li>NAT gateway & route tables</li>
+  <li>Security group and NACL hardening</li>
+  <li>Baseline network segmentation</li>
+</ul>
 
-**Stack:** Terraform • AWS • VPC Security  
-
-🔗 **Repo:**  
+<strong>Stack:</strong> Terraform • AWS • VPC Security<br>
+<strong>Repo:</strong><br>
 https://github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform
+</p>
 
-  </td>
-  <td width="50%" valign="top">
+    </td>
+    <td width="50%" valign="top">
 
-### 🟠 Linux Security Hardening with Ansible
+<h3>🟠 Linux Security Hardening with Ansible</h3>
 
+<p>
 Automated OS-level hardening:
-- SSH lockdown (no root login, key-based access)
-- Firewall baseline rules
-- Password policy + PAM controls
-- Service & package tightening
+<ul>
+  <li>SSH lockdown (no root login, key-based access)</li>
+  <li>Firewall baseline rules</li>
+  <li>Password policy + PAM controls</li>
+  <li>Service & package tightening</li>
+</ul>
 
-**Stack:** Ansible • Linux • CIS-inspired controls  
-
-🔗 **Repo:**  
+<strong>Stack:</strong> Ansible • Linux • CIS-inspired controls<br>
+<strong>Repo:</strong><br>
 https://github.com/godwinkdzidotor-stack/ansible-security-hardening
+</p>
 
-  </td>
+    </td>
   </tr>
 </table>
 
@@ -117,103 +123,53 @@ https://github.com/godwinkdzidotor-stack/ansible-security-hardening
   <tr>
     <td width="50%" valign="top">
 
-### 🟢 Python Network Security Automation
+<h3>🟢 Python Network Security Automation</h3>
 
+<p>
 Two core tools:
-- **Firewall auditor:** flags `src=any`, `dst=any`, `0.0.0.0/0`, and overly broad rules  
-- **Subnet scanner:** ICMP reachability scan across a CIDR
+<ul>
+  <li><strong>Firewall auditor:</strong> flags <code>src=any</code>, <code>dst=any</code>, <code>0.0.0.0/0</code>, overly broad rules</li>
+  <li><strong>Subnet scanner:</strong> ICMP reachability scan across a CIDR</li>
+</ul>
 
 Useful for:
-- Quick posture checks
-- Lab environments
-- Teaching basic network security automation
+<ul>
+  <li>Quick posture checks</li>
+  <li>Lab environments</li>
+  <li>Teaching basic network security automation</li>
+</ul>
 
-**Stack:** Python • Networking • CSV parsing  
-
-🔗 **Repo:**  
+<strong>Stack:</strong> Python • Networking • CSV parsing<br>
+<strong>Repo:</strong><br>
 https://github.com/godwinkdzidotor-stack/python-network-automation
+</p>
 
-  </td>
-  <td width="50%" valign="top">
+    </td>
+    <td width="50%" valign="top">
 
-### 🟢 DevSecOps Python CI/CD Pipeline
+<h3>🟢 DevSecOps Python CI/CD Pipeline</h3>
 
-A full CI/CD pipeline that runs on every push:
-
-1. ✅ **Syntax check** — `python -m py_compile`
-2. 🛡 **Bandit SAST scan** — recursive, with report artifact
-3. 🐳 **Docker build** — validates containerization
-4. 📎 **Artifacts** — Bandit report uploaded for review
+<p>
+A full CI/CD pipeline runs on every push:
+<ol>
+  <li><strong>Syntax check</strong> — <code>python -m py_compile</code></li>
+  <li><strong>Bandit SAST scan</strong> — recursive, with artifact</li>
+  <li><strong>Docker build</strong> — validates containerization</li>
+  <li><strong>Artifacts</strong> — Bandit HTML report uploaded</li>
+</ol>
 
 Includes:
-- Status badges
-- Pipeline screenshots
-- Clear README documentation
+<ul>
+  <li>Status badges</li>
+  <li>Pipeline screenshots</li>
+  <li>Clear documentation</li>
+</ul>
 
-**Stack:** GitHub Actions • Bandit • Docker  
-
-🔗 **Repo:**  
+<strong>Stack:</strong> GitHub Actions • Bandit • Docker<br>
+<strong>Repo:</strong><br>
 https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd
+</p>
 
-  </td>
+    </td>
   </tr>
-</table>
-
----
-
-# 🧰 Skills & Technologies
-
-### 🛡 Security Engineering
-- DevSecOps pipelines & automation  
-- Static analysis (Bandit)  
-- Network security & segmentation  
-- Firewall rule review & auditing  
-- IAM, least privilege, and Zero Trust-aligned thinking  
-- OS & infrastructure hardening  
-
-### ☁️ Cloud, Infra & Automation
-- AWS (VPC, IAM, networking)  
-- Terraform (IaC)  
-- Ansible (configuration management & hardening)  
-- Docker & container security basics  
-- GitHub Actions (CI/CD)  
-- Linux administration  
-
-### 🧑‍💻 Programming & Scripting
-- Python (security tooling, automation)  
-- Bash  
-- YAML (CI/CD pipelines, configs)  
-- Git / GitHub workflows  
-
----
-
-# 👨‍💼 About Me
-
-I am a **Cybersecurity Engineer** with a background that blends:
-
-- **Cloud & infrastructure engineering**
-- **DevSecOps & automation**
-- **Network defense & secure design**
-- **Research, mentoring, and leadership**
-
-I enjoy:
-- Turning security principles into **repeatable automation**
-- Designing **secure-by-default** environments
-- Explaining complex systems in a way that’s clear and practical
-- Working on teams that care about both **mission** and **resilience**
-
-If you’re looking for someone who can **design, build, and secure systems**—and explain the *why* behind the decisions—I’d love to connect.
-
----
-
-# 📫 Contact
-
-- 📧 **Email:** godwink.dzidotor@gmail.com  
-- 🔗 **LinkedIn:** https://www.linkedin.com/in/godwink-dzidotor-phd  
-- 🌐 **GitHub:** https://github.com/godwinkdzidotor-stack  
-
----
-
-<div align="center" style="margin-top:24px;color:#8b949e;">
-  <em>🚀 This site is automatically deployed using GitHub Pages.</em>
-</div>
+</t
