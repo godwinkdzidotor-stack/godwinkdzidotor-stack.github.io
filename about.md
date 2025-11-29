@@ -1,7 +1,9 @@
 ---
 layout: default
 title: About
+permalink: /about
 ---
+
 
 <!-- ============================= -->
 <!--     ABOUT PAGE — PRO MAX     -->
