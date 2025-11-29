@@ -1,15 +1,4 @@
-/* --- TUNE CAYMAN PAGE HEADER SIZE --- */
+/* Completely hide Cayman theme header bar */
 .page-header {
-  padding: 1.5rem 1rem;     /* less height */
-  margin-bottom: 1.5rem;    /* less gap below */
-}
-
-.project-name {
-  font-size: 2.1rem;        /* smaller main title */
-  margin-bottom: 0.25rem;
-}
-
-.project-tagline {
-  font-size: 1rem;          /* smaller subtitle */
-  font-weight: 400;
+  display: none !important;
 }
