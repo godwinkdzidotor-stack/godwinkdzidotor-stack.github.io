@@ -1,29 +1,193 @@
----
----
+/* ===========================
+   GLOBAL GLOW BUTTONS
+   =========================== */
 
-/* Import the base Cayman theme styles */
-@import "{{ site.theme }}";
-
-/* 1. Completely hide the big top banner */
-.page-header {
-  display: none !important;
+.glow-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  color: white;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
 }
 
-/* 2. Widen the main content area and make it responsive */
-.page-content {
-  padding-top: 0; /* remove extra top padding */
+.glow-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: inherit;
+  z-index: -1;
+  opacity: 0;
+  transform: scale(1);
+  filter: blur(14px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
 }
 
-.page-content .wrapper {
-  max-width: 1200px;      /* wider content on large screens */
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 3rem 4rem;
+.glow-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(148, 163, 184, 0.35);
 }
 
-/* 3. Slightly tighter on small screens */
-@media (max-width: 768px) {
-  .page-content .wrapper {
-    padding: 1.5rem;
+.glow-btn:hover::after {
+  opacity: 0.85;
+  transform: scale(1.12);
+}
+
+.glow-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0 6px rgba(15,23,42,0.8) inset;
+}
+
+.glow-blue    { background: #0ea5e9; }
+.glow-purple  { background: #7c3aed; }
+.glow-green   { background: #22c55e; color:#020617; font-weight:700; }
+.glow-orange  { background: #ea580c; }
+.glow-gray    { background: #4b5563; }
+.glow-indigo  { background: #1d4ed8; }
+
+.hero-cta {
+  padding: 12px 26px;
+  font-size: 1rem;
+}
+
+/* ===========================
+   NAV BAR WITH GLOW LINKS
+   =========================== */
+
+.primary-nav-wrapper {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.primary-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #020617;
+  box-shadow: 0 0 0 1px #1f2937;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #9ca3af;
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  bottom: 3px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#22c55e,#0ea5e9);
+  opacity: 0;
+  transform: scaleX(0.6);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #e5e7eb;
+  background: #111827;
+  transform: translateY(-1px);
+}
+
+.nav-link:hover::after {
+  opacity: 0.9;
+  transform: scaleX(1);
+}
+
+.nav-link.active {
+  color: #e5e7eb;
+  background: rgba(34,197,94,0.18);
+  box-shadow: 0 0 14px rgba(34,197,94,0.35);
+}
+
+.nav-link.active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* optional chips + microsite header */
+.badge-chip {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:0.78rem;
+  font-weight:500;
+  background:#020617;
+  color:#e5e7eb;
+  border:1px solid #1e293b;
+  margin:0 2px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.badge-chip:hover {
+  box-shadow: 0 0 12px rgba(148,163,184,0.3);
+  transform: translateY(-1px);
+  border-color:#22c55e;
+}
+
+.micro-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 14px;
+  margin:0 auto 14px;
+  max-width:980px;
+  background:#020617;
+  border-radius:14px;
+  box-shadow:0 0 18px rgba(15,23,42,0.8);
+  color:#e5e7eb;
+}
+
+.micro-link {
+  font-size:0.9rem;
+  font-weight:500;
+  text-decoration:none;
+  color:#9ca3af;
+  padding:6px 10px;
+  border-radius:999px;
+  transition:background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+  border:1px solid transparent;
+}
+
+.micro-link:hover {
+  background:#111827;
+  color:#e5e7eb;
+  box-shadow:0 0 12px rgba(148,163,184,0.4);
+  border-color:#22c55e;
+}
+
+.micro-link.danger:hover {
+  border-color:#f97316;
+  box-shadow:0 0 14px rgba(248,113,113,0.45);
+}
+
+@media (max-width: 640px) {
+  .primary-nav {
+    gap: 10px;
+    padding: 6px 10px;
+  }
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 4px 8px;
   }
 }
