@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Projects
+permalink: /projects
 ---
+
 
 <!-- ============================= -->
 <!--    PROJECTS PAGE — PRO MAX   -->
