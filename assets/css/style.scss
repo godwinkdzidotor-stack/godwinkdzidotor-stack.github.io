@@ -1,0 +1,29 @@
+---
+---
+
+/* Import the base Cayman theme styles */
+@import "{{ site.theme }}";
+
+/* 1. Completely hide the big top banner */
+.page-header {
+  display: none !important;
+}
+
+/* 2. Widen the main content area and make it responsive */
+.page-content {
+  padding-top: 0; /* remove extra top padding */
+}
+
+.page-content .wrapper {
+  max-width: 1200px;      /* wider content on large screens */
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 3rem 4rem;
+}
+
+/* 3. Slightly tighter on small screens */
+@media (max-width: 768px) {
+  .page-content .wrapper {
+    padding: 1.5rem;
+  }
+}
