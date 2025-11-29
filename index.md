@@ -1,108 +1,114 @@
-# Dr. Godwin K. Dzidotor  
+# Dr. Godwin K. Dzidotor, PhD  
 ### Cybersecurity Engineer • DevSecOps • Cloud Security • Network Security
 
 ---
 
 ## 🔐 Welcome to My Cybersecurity & DevSecOps Portfolio
 
-This portfolio highlights hands-on projects that demonstrate my skills in:
+This portfolio showcases hands-on security engineering projects demonstrating my capabilities in:
 
 - **Cloud Security (AWS)**
-- **DevSecOps & CI/CD pipelines**
-- **Static code analysis (Bandit)**
-- **Infrastructure security (Terraform, Ansible)**
-- **Python security automation**
-- **Network auditing & vulnerability scanning**
+- **DevSecOps & CI/CD Automation**
+- **Static Code Analysis (Bandit, SAST)**
+- **Infrastructure Security (Terraform, Ansible)**
+- **Python-Based Security Automation**
+- **Network Auditing & Vulnerability Scanning**
 
-Each project includes real code, pipelines, security testing outputs, and full documentation.
-
----
-
-## 🚀 Featured Security Projects
-
-### 🔸 1. **Secure AWS VPC with Terraform**
-A full Terraform deployment of a secure, production-style AWS VPC.
-
-👉 **View Repo:** https://github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform
+Each project includes real code, pipelines, security outputs, and detailed documentation.
 
 ---
 
-### 🔸 2. **Linux Security Hardening with Ansible**
-Automated OS-level hardening (SSH, firewall, password policy).
+# 🌟 Featured Security Projects
 
-👉 **View Repo:**  
+## 🔸 **1. Secure AWS VPC with Terraform**
+A full Terraform deployment of a secure production-ready AWS VPC with subnets, NAT gateway, NACLs, IGW, and routing.
+
+🔗 **Repo:**  
+https://github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform
+
+---
+
+## 🔸 **2. Linux Security Hardening (Ansible)**
+Automated OS-level hardening including SSH lockdown, firewall enforcement, CIS-style password policies & service disabling.
+
+🔗 **Repo:**  
 https://github.com/godwinkdzidotor-stack/ansible-security-hardening
 
 ---
 
-### 🔸 3. **Python Network Security Automation**
-Firewall rule auditing + ICMP subnet scanning.
+## 🔸 **3. Python Network Security Automation**
+A Python toolkit for firewall rule auditing and ICMP subnet scanning — built for quick assessments and network visibility.
 
-👉 **View Repo:**  
+🔗 **Repo:**  
 https://github.com/godwinkdzidotor-stack/python-network-automation
 
 ---
 
-### 🔸 4. **DevSecOps CI/CD Pipeline**
-Full CI pipeline with syntax checks, Bandit SAST & Docker builds.
+## 🔸 **4. DevSecOps CI/CD Pipeline (Bandit + Docker)**
+A complete CI/CD pipeline using GitHub Actions:  
+syntax checks → Bandit SAST scanning → Docker image build → artifact export.
 
-👉 **View Repo:**  
+🔗 **Repo:**  
 https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd
 
 ---
 
-## 🛡️ Badges
+# 🛡️ Security & Build Badges
 
 ![CI](https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd/actions/workflows/devsecops.yml/badge.svg)
-![Bandit](https://img.shields.io/badge/Bandit-SAST%20scan-green?logo=python&logoColor=white)
-![Docker Build](https://img.shields.io/badge/Docker-builds%20clean-blue?logo=docker&logoColor=white)
+![Bandit](https://img.shields.io/badge/Bandit-SAST%20Scan-green?logo=python&logoColor=white)
+![Docker Build](https://img.shields.io/badge/Docker-Builds%20Clean-blue?logo=docker&logoColor=white)
 
 ---
 
-## 🧰 Skills & Technologies
+# 🧰 Technical Skills
 
-### 🔐 Security
-- DevSecOps pipelines  
-- Bandit SAST  
-- Security auditing  
-- IAM, Zero Trust  
-- Network security  
-- Vulnerability assessment  
+### 🔐 **Security Engineering**
+- DevSecOps Pipelines  
+- SAST with Bandit  
+- IAM & Zero Trust Principles  
+- Network Security & Firewall Auditing  
+- Vulnerability Assessment & Hardening  
 
-### ☁️ Cloud & Automation
+### ☁️ **Cloud & Automation**
 - AWS  
 - Terraform  
 - Ansible  
 - Docker  
 - GitHub Actions  
-- Linux OS hardening  
+- Linux Hardening  
 
-### 🐍 Programming
-- Python (security scripting)  
+### 🧑‍💻 **Programming & Scripting**
+- Python (Security Automation)  
 - Bash  
-- CI/CD YAML pipelines  
+- CI/CD YAML Pipelines  
 
 ---
 
-## 👨‍💼 About Me
+# 👨‍💼 About Me
 
-I am a **Cybersecurity Engineer** with a strong background in  
+I am a **Cybersecurity Engineer** with expertise in  
 **DevSecOps, cloud security, automation, and network defense**.
 
-My mission is to build secure, automated systems  
-that support both resilience and operational excellence.
+My work focuses on:
 
-I bring experience in:
+- Building secure automated pipelines  
+- Enforcing cloud & infrastructure security  
+- Designing efficient and resilient security systems  
+- Applying engineering, research, and leadership skills  
+- Delivering real-world security solutions with precision and discipline  
 
-- Hands-on security engineering  
-- Automating infrastructure and deployments  
-- Research & development  
-- Military discipline and leadership  
-- Teaching, mentoring, and technical writing  
+I bring a unique combination of:
+
+- **Technical depth** (PhD engineer)  
+- **Cybersecurity specialization**  
+- **Military discipline (USAF)**  
+- **Industry experience**  
+- **Teaching & mentoring skills**
 
 ---
 
-## 📫 Contact
+# 📫 Contact
 
 📧 **Email:** godwink.dzidotor@gmail.com  
 🔗 **LinkedIn:** https://www.linkedin.com/in/godwink-dzidotor-phd  
@@ -110,4 +116,4 @@ I bring experience in:
 
 ---
 
-_This site is automatically published using **GitHub Pages**._
+_This website is automatically published using **GitHub Pages**._
