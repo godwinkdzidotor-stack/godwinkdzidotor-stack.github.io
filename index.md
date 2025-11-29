@@ -45,67 +45,14 @@ permalink: /
     <a href="/about" style="color:#58a6ff; margin: 0 12px;">About</a>
     <a href="/contact" style="color:#58a6ff; margin: 0 12px;">Contact</a>
   </p>
-
-  <!-- LinkedIn (glow pill) -->
+  
   <a href="https://www.linkedin.com/in/godwin-k-dzidotor-phd-36096a234/" 
      target="_blank" 
      rel="noopener noreferrer"
-     class="glow-btn glow-linkedin"
-     style="margin-top:10px;">
+     style="display:inline-block; background:#0077b5; color:white; padding:8px 16px; 
+            border-radius:6px; text-decoration:none; font-weight:bold;">
      Connect on LinkedIn
   </a>
-
-  <!-- 🔗 Portfolio microsites (glow pills) -->
-  <div style="margin-top: 18px;">
-
-    <a href="https://godwinkdzidotor-stack.github.io/Network-Engineering-Projects/"
-       target="_blank" rel="noopener noreferrer"
-       class="glow-btn glow-blue"
-       style="margin:6px;">
-       🌐 Network Engineering Projects
-    </a>
-
-    <a href="https://godwinkdzidotor-stack.github.io/Risk-Management-Framework-Portfolio/"
-       target="_blank" rel="noopener noreferrer"
-       class="glow-btn glow-gray"
-       style="margin:6px;">
-       🛡️ RMF Portfolio
-    </a>
-
-  </div>
-
-  <!-- Additional repo microsites (glow pills) -->
-  <div style="margin-top: 8px;">
-
-    <a href="https://godwinkdzidotor-stack.github.io/devsecops-python-ci-cd/"
-       target="_blank" rel="noopener noreferrer"
-       class="glow-btn glow-purple"
-       style="margin:6px;">
-       ⚙️ DevSecOps Python CI/CD
-    </a>
-
-    <a href="https://godwinkdzidotor-stack.github.io/python-network-automation/"
-       target="_blank" rel="noopener noreferrer"
-       class="glow-btn glow-indigo"
-       style="margin:6px;">
-       🧪 Python Network Automation
-    </a>
-
-    <a href="https://godwinkdzidotor-stack.github.io/ansible-security-hardening/"
-       target="_blank" rel="noopener noreferrer"
-       class="glow-btn glow-orange"
-       style="margin:6px;">
-       🛠️ Ansible Security Hardening
-    </a>
-
-    <a href="https://godwinkdzidotor-stack.github.io/aws-secure-vpc-terraform/"
-       target="_blank" rel="noopener noreferrer"
-       class="glow-btn glow-green"
-       style="margin:6px;">
-       ☁️ AWS Secure VPC (Terraform)
-    </a>
-
-  </div>
 
 </div>
 
