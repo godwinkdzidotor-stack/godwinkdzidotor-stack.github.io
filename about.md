@@ -3,7 +3,7 @@
 <!-- ============================= -->
 
 <div align="center" style="background:#0d1117;padding:24px 16px;border-radius:16px;margin-bottom:24px;">
-  <h2 style="color:#e6edf3;margin:0;">👨‍💻 About Dr. Godwin K. Dzidotor, PhD</h2>
+  <h2 style="color:#e6edf3;margin:0;">👨‍💻 About Godwin K. Dzidotor, PhD</h2>
   <p style="color:#9ca3af;margin:8px 0 0;">
     Cybersecurity Engineer with a foundation in research, automation, and mission-driven work.
   </p>
