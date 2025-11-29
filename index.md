@@ -5,7 +5,7 @@
 
 <div align="center" style="background:#0d1117;padding:32px 16px;border-radius:16px;margin-bottom:24px;">
 
-  <h1 style="color:#e6edf3;font-size:2.4rem;margin-bottom:0.3rem;">🔐 Dr. Godwin K. Dzidotor, PhD</h1>
+  <h1 style="color:#e6edf3;font-size:2.4rem;margin-bottom:0.3rem;">🔐 Godwin K. Dzidotor, PhD</h1>
   <h3 style="color:#c9d1d9;margin-top:0;">Cybersecurity Engineer • DevSecOps • Cloud Security • Network Security</h3>
 
   <p style="color:#8b949e;max-width:640px;margin:0 auto 16px;">
@@ -19,13 +19,13 @@
     <img src="https://img.shields.io/badge/Docker-Builds%20Clean-blue?logo=docker&logoColor=white" alt="Docker builds clean" />
   </p>
 
-  <!-- Quick nav -->
-  <p>
-    <a href="#-featured-security-projects">Projects</a> •
-    <a href="#-skills--technologies">Skills</a> •
-    <a href="#-about-me">About</a> •
-    <a href="#-contact">Contact</a>
-  </p>
+<!-- Quick nav -->
+<p>
+  <a href="projects.md">Projects</a> •
+  <a href="skills.md">Skills</a> •
+  <a href="about.md">About</a> •
+  <a href="contact.md">Contact</a>
+</p>
 
 </div>
 
