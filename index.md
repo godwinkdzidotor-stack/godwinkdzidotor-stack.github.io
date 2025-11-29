@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 <!-- =============================== -->
 <!--   GODWIN K. DZIDOTOR, PhD — V3   -->
 <!--        PORTFOLIO PRO EDIT       -->
