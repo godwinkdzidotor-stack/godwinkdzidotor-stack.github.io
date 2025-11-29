@@ -116,9 +116,13 @@ Automated OS-level hardening:
 </ul>
 
 <strong>Stack:</strong> Ansible • Linux • CIS-inspired controls<br>
-<strong>Repo:</strong><br>
-https://github.com/godwinkdzidotor-stack/ansible-security-hardening
-</p>
+<strong>Repo:</strong>
+<a href="https://github.com/godwinkdzidotor-stack/ansible-security-hardening" 
+   target="_blank" 
+   rel="noopener noreferrer">
+   github.com/godwinkdzidotor-stack/ansible-security-hardening
+</a>
+
 
     </td>
   </tr>
