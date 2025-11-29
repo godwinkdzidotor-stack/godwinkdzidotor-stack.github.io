@@ -46,14 +46,14 @@ permalink: /
     <a href="/contact" style="color:#58a6ff; margin: 0 12px;">Contact</a>
   </p>
   
-  <p style="margin-top: 6px; font-size: 0.95rem;">
-    <a href="https://www.linkedin.com/in/godwink-dzidotor-phd"
-       target="_blank"
-       rel="noopener noreferrer"
-       style="color:#c9d1d9; text-decoration: underline;">
-      Connect with me on LinkedIn
-    </a>
-  </p>
+  <a href="https://www.linkedin.com/in/godwin-k-dzidotor-phd-36096a234/" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   style="display:inline-block; background:#0077b5; color:white; padding:8px 16px; 
+          border-radius:6px; text-decoration:none; font-weight:bold;">
+   Connect on LinkedIn
+</a>
+
 
 </div>
 
