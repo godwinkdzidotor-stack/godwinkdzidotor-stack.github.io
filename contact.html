@@ -249,3 +249,261 @@
     .grid {
       display: grid;
       grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 18px;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card-section {
+      background: rgba(15, 23, 42, 0.92);
+      border-radius: 20px;
+      padding: 16px 18px 14px;
+      border: 1px solid rgba(31, 41, 55, 0.95);
+      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.9);
+    }
+
+    .card-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .card-section h2 {
+      margin: 0;
+      font-size: 1rem;
+      color: #e5e7eb;
+    }
+
+    .card-label {
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .card-body {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    .card-body ul {
+      margin: 6px 0 4px 20px;
+      padding: 0;
+    }
+
+    .card-body li {
+      margin-bottom: 3px;
+    }
+
+    .inline-badges {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .inline-badge {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: var(--chip-bg);
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      color: var(--text-muted);
+    }
+
+    .footer-note {
+      margin-top: 14px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .link-strong {
+      font-weight: 500;
+      color: var(--accent-strong);
+    }
+
+    .link-strong:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="panel">
+      <div class="panel-inner">
+        <!-- Top bar -->
+        <div class="top-bar">
+          <a href="https://godwinkdzidotor-stack.github.io" class="pill-btn">
+            <span class="icon">⬅</span>
+            Back to Homepage
+          </a>
+          <a href="https://github.com/godwinkdzidotor-stack" class="pill-btn secondary">
+            <span class="icon">✕</span>
+            Close Page
+          </a>
+        </div>
+
+        <!-- Header row -->
+        <div class="header-row">
+          <div class="identity">
+            <div class="avatar">GD</div>
+            <div class="identity-main">
+              <h1>GODWIN K. DZIDOTOR, PHD</h1>
+              <p>Cybersecurity • DevSecOps • Cloud Security • Network Security</p>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <div class="tag-pill primary">Contact &amp; Next Steps</div>
+            <div class="tag-pill">Open to Roles &amp; Collab</div>
+            <div class="tag-pill">Remote / Hybrid</div>
+          </div>
+        </div>
+
+        <!-- Page title + nav chips -->
+        <h2 class="page-title">Let’s Connect</h2>
+        <p class="subtitle">
+          Best ways to reach me for roles, collaboration, or deep technical discussions around
+          cybersecurity, DevSecOps, and network security.
+        </p>
+
+        <div class="nav-chips">
+          <a href="https://godwinkdzidotor-stack.github.io" class="nav-chip">Home</a>
+          <a href="https://godwinkdzidotor-stack.github.io/projects" class="nav-chip">Projects</a>
+          <a href="https://godwinkdzidotor-stack.github.io/skills" class="nav-chip">Skills</a>
+          <a href="https://godwinkdzidotor-stack.github.io/about" class="nav-chip">About</a>
+          <span class="nav-chip active">Contact</span>
+        </div>
+
+        <!-- Content grid -->
+        <div class="grid">
+          <!-- Column 1: contact + how I can help -->
+          <section class="card-section">
+            <div class="card-header-row">
+              <h2>Primary Contact</h2>
+              <div class="card-label">Direct Channels</div>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>Email</strong><br />
+                <a href="mailto:godwink.dzidotor@gmail.com" class="link-strong">
+                  godwink.dzidotor@gmail.com
+                </a>
+              </p>
+
+              <p>
+                <strong>LinkedIn</strong><br />
+                <a href="https://www.linkedin.com/in/godwink-dzidotor-phd"
+                   target="_blank" rel="noopener noreferrer">
+                  linkedin.com/in/godwink-dzidotor-phd
+                </a>
+              </p>
+
+              <p>
+                <strong>GitHub</strong><br />
+                <a href="https://github.com/godwinkdzidotor-stack"
+                   target="_blank" rel="noopener noreferrer">
+                  github.com/godwinkdzidotor-stack
+                </a>
+              </p>
+
+              <div class="inline-badges">
+                <span class="inline-badge">Cybersecurity Engineering</span>
+                <span class="inline-badge">DevSecOps</span>
+                <span class="inline-badge">Cloud &amp; Network Security</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="card-section">
+            <div class="card-header-row">
+              <h2>How I Can Help</h2>
+              <div class="card-label">Collaboration Areas</div>
+            </div>
+            <div class="card-body">
+              <p>I’m open to conversations about:</p>
+              <ul>
+                <li><strong>Cybersecurity Engineering / DevSecOps roles</strong></li>
+                <li><strong>Cloud &amp; infrastructure security</strong> initiatives</li>
+                <li>Building or improving <strong>CI/CD security pipelines</strong></li>
+                <li><strong>Network security</strong> baselines &amp; hardening projects</li>
+                <li>Collaborating on <strong>education, labs, or training content</strong></li>
+              </ul>
+              <p>
+                When you reach out, it’s helpful to include:
+              </p>
+              <ul>
+                <li>The <strong>type of role</strong> (full-time, contract, project-based, etc.)</li>
+                <li>The <strong>primary tech stack</strong> (cloud provider, tools, languages)</li>
+                <li>
+                  How security is currently integrated into your
+                  <strong>SDLC or operations</strong>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Column 2: using portfolio + interviews -->
+          <section class="card-section">
+            <div class="card-header-row">
+              <h2>Using This Portfolio</h2>
+              <div class="card-label">For Recruiters &amp; Hiring Managers</div>
+            </div>
+            <div class="card-body">
+              <p>If you arrived here from a resume or LinkedIn:</p>
+              <ul>
+                <li>
+                  The <strong>Projects</strong> page maps directly to the repositories I mention in my resume.
+                </li>
+                <li>
+                  The <strong>Skills</strong> page outlines the technologies I’ve applied in hands-on labs.
+                </li>
+                <li>
+                  The <strong>Home</strong> page gives a quick, recruiter-friendly overview of my focus areas.
+                </li>
+              </ul>
+              <p>
+                I’m happy to walk through any repo live, explain design decisions,
+                or discuss how I would extend these patterns in a production environment.
+              </p>
+            </div>
+          </section>
+
+          <section class="card-section">
+            <div class="card-header-row">
+              <h2>Next Steps</h2>
+              <div class="card-label">Let’s Talk</div>
+            </div>
+            <div class="card-body">
+              <p>
+                The fastest way to reach me is via <strong>email</strong> or
+                <strong>LinkedIn message</strong>. If you share a brief outline of
+                the opportunity and stack, I can typically respond with:
+              </p>
+              <ul>
+                <li>Relevant experience &amp; how I’d add value</li>
+                <li>Availability &amp; timeline for next steps</li>
+                <li>Ideas for immediate impact in the first 30–90 days</li>
+              </ul>
+              <p class="footer-note">
+                Thank you for visiting — I look forward to connecting and exploring how we can build
+                secure, resilient systems together.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
