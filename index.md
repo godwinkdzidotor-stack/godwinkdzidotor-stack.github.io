@@ -1,107 +1,200 @@
 <!-- =============================== -->
-<!--   DR. GODWIN K. DZIDOTOR — PRO MAX HOMEPAGE   -->
+<!--   DR. GODWIN K. DZIDOTOR — V3   -->
+<!--        PORTFOLIO PRO EDIT       -->
 <!-- =============================== -->
 
-<div align="center" style="
-  background: linear-gradient(135deg, #0d1117, #161b22);
-  padding: 48px 24px;
-  border-radius: 22px;
-  margin-bottom: 34px;
-  color: white;
-  box-shadow: 0 0 28px rgba(34,197,94,0.18);
-">
+<div align="center" style="background:#0d1117;padding:32px 16px;border-radius:16px;margin-bottom:24px;">
 
-  <h1 style="margin-bottom: 0.3rem; font-size: 3rem; font-weight: 700;">
-    Dr. Godwin K. Dzidotor, PhD
-  </h1>
+  <h1 style="color:#e6edf3;font-size:2.4rem;margin-bottom:0.3rem;">🔐 Dr. Godwin K. Dzidotor, PhD</h1>
+  <h3 style="color:#c9d1d9;margin-top:0;">Cybersecurity Engineer • DevSecOps • Cloud Security • Network Security</h3>
 
-  <h3 style="color:#4ade80; margin-top: 0; font-size: 1.3rem;">
-    Cybersecurity Engineer • DevSecOps • Cloud Security • Network Security
-  </h3>
-
-  <p style="max-width: 780px; margin: 12px auto 22px; font-size: 1.07rem; color:#c9d1d9; line-height: 1.6;">
-    Cybersecurity engineer with deep experience in <strong>RMF, A&A, FedRAMP, vulnerability management,
-    cloud security, and secure automation</strong>. Former Information System Security Assessor and
-    network engineer with a unique combination of <strong>PhD-level engineering, DoD experience,
-    system security, and infrastructure design</strong>. I build secure, automated, resilient ecosystems  
-    that protect mission-critical assets across cloud and on-prem environments.
+  <p style="color:#8b949e;max-width:640px;margin:0 auto 16px;">
+    Building secure, automated, and resilient systems at the intersection of cybersecurity, cloud, and infrastructure engineering.
   </p>
 
-  <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-    <a href="/resume" style="
-      padding: 10px 22px;
-      background: #22c55e;
-      border-radius: 10px;
-      color: black;
-      font-weight: 600;
-      text-decoration: none;
-    ">View Resume</a>
-
-    <a href="/projects" style="
-      padding: 10px 22px;
-      background: transparent;
-      border: 1px solid #4ade80;
-      border-radius: 10px;
-      color: #4ade80;
-      font-weight: 600;
-      text-decoration: none;
-    ">Cybersecurity Projects</a>
-
-    <a href="https://www.linkedin.com/in/your-link" target="_blank" style="
-      padding: 10px 22px;
-      background: #0077b5;
-      border-radius: 10px;
-      color: white;
-      font-weight: 600;
-      text-decoration: none;
-    ">LinkedIn</a>
-  </div>
-</div>
-
-<!-- =============================== -->
-<!--      SKILLS PREVIEW SECTION     -->
-<!-- =============================== -->
-
-<div style="background:#0d1117; padding:40px 20px; border-radius:14px;">
-  <h2 style="color:white; text-align:center; margin-bottom:16px;">Core Cybersecurity Strengths</h2>
-
-  <p style="max-width:900px; margin:auto; text-align:center; color:#c9d1d9; font-size:1.05rem;">
-    Risk Management Framework (RMF) • Assessment & Authorization (A&A) •  
-    FedRAMP • Vulnerability Management • Cloud Security Architecture •  
-    NIST 800-53 / 800-37 / 800-171 • Continuous Monitoring (ISCM) •  
-    Network Vulnerability Scanning • Splunk • Nessus • Archer • SOC Processes  
+  <!-- Badges row -->
+  <p>
+    <img src="https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd/actions/workflows/devsecops.yml/badge.svg" alt="DevSecOps CI/CD" />
+    <img src="https://img.shields.io/badge/Bandit-SAST%20Scan-green?logo=python&logoColor=white" alt="Bandit SAST" />
+    <img src="https://img.shields.io/badge/Docker-Builds%20Clean-blue?logo=docker&logoColor=white" alt="Docker builds clean" />
   </p>
+
+  <!-- Quick nav -->
+  <p>
+    <a href="#-featured-security-projects">Projects</a> •
+    <a href="#-skills--technologies">Skills</a> •
+    <a href="#-about-me">About</a> •
+    <a href="#-contact">Contact</a>
+  </p>
+
 </div>
 
-<!-- =============================== -->
-<!--   FEATURED PRO MAX PROJECTS     -->
-<!-- =============================== -->
+---
 
-<section style="margin-top: 40px;">
-  <h2 style="color:white; text-align:center;">Featured Pro Max Projects</h2>
+# 🔐 Portfolio Overview
 
-  <div style="
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-      gap:20px;
-      margin-top:25px;
-  ">
-    <div style="background:#161b22; padding:20px; border-radius:14px; color:white;">
-      <h3>Zero-Trust Network Hardening</h3>
-      <p style="color:#9ba3af;">Implementing modern Zero-Trust segmentation with micro-perimeters, policy enforcement, and automated compliance workflows.</p>
-      <a href="/projects/zero-trust" style="color:#4ade80;">View Project →</a>
-    </div>
+This portfolio showcases **hands-on security engineering work** across:
 
-    <div style="background:#161b22; padding:20px; border-radius:14px; color:white;">
-      <h3>RMF Package Automation Suite</h3>
-      <p style="color:#9ba3af;">Automating SSP, SAR, POA&M, and continuous monitoring using Python + GitHub Actions to streamline ATO timelines.</p>
-      <a href="/projects/rmf-automation" style="color:#4ade80;">View Project →</a>
-    </div>
+- **Cloud Security (AWS)**
+- **DevSecOps & CI/CD automation**
+- **Static Application Security Testing (SAST) with Bandit**
+- **Infrastructure-as-Code security (Terraform, Ansible)**
+- **Python security tooling & network automation**
 
-    <div style="background:#161b22; padding:20px; border-radius:14px; color:white;">
-      <h3>Cloud Security Detection Lab</h3>
-      <p style="color:#9ba3af;">Hands-on SIEM pipeline integrating Splunk, Sysmon, and cloud logging for threat detection, correlation, and response.</p>
-      <a href="/projects/cloud-detection" style="color:#4ade80;">View Project →</a>
-    </div>
-  </div>
-</section>
+Each project includes **real code**, **pipelines**, **security outputs**, and **documentation**—demonstrating how I think about **secure design, implementation, and operations**.
+
+---
+
+# 🚀 Featured Security Projects
+
+> ⚠️ All projects are built for **lab, education, and portfolio use** only — not for unauthorized testing.
+
+<br>
+
+## 🧩 Cloud & Infrastructure Security
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+
+### 🟠 Secure AWS VPC with Terraform
+
+A production-style AWS VPC with:
+- Public & private subnets
+- NAT gateway & route tables
+- Security group and NACL hardening
+- Baseline network segmentation
+
+**Stack:** Terraform • AWS • VPC Security  
+
+🔗 **Repo:**  
+https://github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform
+
+  </td>
+  <td width="50%" valign="top">
+
+### 🟠 Linux Security Hardening with Ansible
+
+Automated OS-level hardening:
+- SSH lockdown (no root login, key-based access)
+- Firewall baseline rules
+- Password policy + PAM controls
+- Service & package tightening
+
+**Stack:** Ansible • Linux • CIS-inspired controls  
+
+🔗 **Repo:**  
+https://github.com/godwinkdzidotor-stack/ansible-security-hardening
+
+  </td>
+  </tr>
+</table>
+
+---
+
+## 🧪 Security Automation & DevSecOps
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+
+### 🟢 Python Network Security Automation
+
+Two core tools:
+- **Firewall auditor:** flags `src=any`, `dst=any`, `0.0.0.0/0`, and overly broad rules  
+- **Subnet scanner:** ICMP reachability scan across a CIDR
+
+Useful for:
+- Quick posture checks
+- Lab environments
+- Teaching basic network security automation
+
+**Stack:** Python • Networking • CSV parsing  
+
+🔗 **Repo:**  
+https://github.com/godwinkdzidotor-stack/python-network-automation
+
+  </td>
+  <td width="50%" valign="top">
+
+### 🟢 DevSecOps Python CI/CD Pipeline
+
+A full CI/CD pipeline that runs on every push:
+
+1. ✅ **Syntax check** — `python -m py_compile`
+2. 🛡 **Bandit SAST scan** — recursive, with report artifact
+3. 🐳 **Docker build** — validates containerization
+4. 📎 **Artifacts** — Bandit report uploaded for review
+
+Includes:
+- Status badges
+- Pipeline screenshots
+- Clear README documentation
+
+**Stack:** GitHub Actions • Bandit • Docker  
+
+🔗 **Repo:**  
+https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd
+
+  </td>
+  </tr>
+</table>
+
+---
+
+# 🧰 Skills & Technologies
+
+### 🛡 Security Engineering
+- DevSecOps pipelines & automation  
+- Static analysis (Bandit)  
+- Network security & segmentation  
+- Firewall rule review & auditing  
+- IAM, least privilege, and Zero Trust-aligned thinking  
+- OS & infrastructure hardening  
+
+### ☁️ Cloud, Infra & Automation
+- AWS (VPC, IAM, networking)  
+- Terraform (IaC)  
+- Ansible (configuration management & hardening)  
+- Docker & container security basics  
+- GitHub Actions (CI/CD)  
+- Linux administration  
+
+### 🧑‍💻 Programming & Scripting
+- Python (security tooling, automation)  
+- Bash  
+- YAML (CI/CD pipelines, configs)  
+- Git / GitHub workflows  
+
+---
+
+# 👨‍💼 About Me
+
+I am a **Cybersecurity Engineer** with a background that blends:
+
+- **Cloud & infrastructure engineering**
+- **DevSecOps & automation**
+- **Network defense & secure design**
+- **Research, mentoring, and leadership**
+
+I enjoy:
+- Turning security principles into **repeatable automation**
+- Designing **secure-by-default** environments
+- Explaining complex systems in a way that’s clear and practical
+- Working on teams that care about both **mission** and **resilience**
+
+If you’re looking for someone who can **design, build, and secure systems**—and explain the *why* behind the decisions—I’d love to connect.
+
+---
+
+# 📫 Contact
+
+- 📧 **Email:** godwink.dzidotor@gmail.com  
+- 🔗 **LinkedIn:** https://www.linkedin.com/in/godwink-dzidotor-phd  
+- 🌐 **GitHub:** https://github.com/godwinkdzidotor-stack  
+
+---
+
+<div align="center" style="margin-top:24px;color:#8b949e;">
+  <em>🚀 This site is automatically deployed using GitHub Pages.</em>
+</div>
