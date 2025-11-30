@@ -1,70 +1,28 @@
-/* ===========================
-   MICROSITE-STYLE PAGE SHELL
-   =========================== */
+---
 
-.page-shell {
-  display: flex;
-  justify-content: center;
-  margin: 32px 0 24px;
-}
+/* Import Cayman theme base styles */
+@import "{{ site.theme }}";
 
-.page-panel {
-  max-width: 980px;
-  width: 100%;
-  margin: 0 12px;
-  background: #020617;
-  border-radius: 18px;
-  padding: 22px 20px 20px;
-  color: #e5e7eb;
-  text-align: center;
-  box-shadow: 0 0 28px rgba(15,23,42,0.9);
-}
-
-.page-title {
-  margin: 0 0 6px;
-  font-size: 1.9rem;
-  color: #22c55e;
-}
-
-.page-subtitle {
-  margin: 0 0 14px;
-  font-size: 0.98rem;
-  color: #9ca3af;
-}
-
-/* Small nav inside panel (Home / Projects / Skills / About / Contact) */
-
-.page-panel-nav {
-  margin-top: 4px;
-}
-
-.page-panel-nav a {
-  font-size: 0.9rem;
-  color: #58a6ff;
-  margin: 0 10px;
-  text-decoration: none;
-  padding: 4px 8px;
-  border-radius: 999px;
-  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
-}
-
-.page-panel-nav a:hover {
-  background: #111827;
-  color: #e5e7eb;
-  transform: translateY(-1px);
-}
-
-.page-panel-nav a.active {
-  background: rgba(34,197,94,0.18);
-  color: #e5e7eb;
-}
-/* Hide the default Cayman page header bar */
+/* Hide the default big GitHub Pages header */
 .page-header {
   display: none !important;
 }
 
-/* Pull main content up now that the header is gone */
-.main-content {
+/* Reduce any leftover top spacing */
+.page-content {
   padding-top: 0 !important;
-  margin-top: 0 !important;
+}
+
+/* Max width for content area (makes site wider & responsive) */
+.page-content .wrapper {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 2rem 3rem 4rem !important;
+}
+
+/* Make it tighter on small screens */
+@media (max-width: 768px) {
+  .page-content .wrapper {
+    padding: 1.2rem !important;
+  }
 }
