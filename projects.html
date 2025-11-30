@@ -164,27 +164,36 @@
       color: var(--text-muted);
     }
 
-    /* Tags */
+    /* Tag chips (top-right) */
     .tag-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
       justify-content: flex-end;
+      align-items: center;
     }
 
     .tag-pill {
-      font-size: 0.75rem;
-      padding: 4px 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      padding: 0 16px;
       border-radius: 999px;
       background: rgba(15, 23, 42, 0.9);
       border: 1px solid rgba(148, 163, 184, 0.5);
       color: var(--text-muted);
+      font-size: 0.78rem;
+      font-weight: 500;
+      line-height: 1;
+      white-space: nowrap;
     }
 
     .tag-pill.primary {
       border-color: var(--accent);
       background: var(--accent-soft);
       color: var(--accent-strong);
+      box-shadow: 0 0 18px rgba(34, 197, 94, 0.6);
     }
 
     /* Title */
@@ -308,7 +317,7 @@
 
           <div class="tag-row">
             <div class="tag-pill primary">Security Engineering Projects</div>
-            <div class="tag-pill">AWS & IaC</div>
+            <div class="tag-pill">AWS &amp; IaC</div>
             <div class="tag-pill">Python Automation</div>
           </div>
         </div>
@@ -328,16 +337,16 @@
 
         <!-- SECTION 1 -->
         <div class="section">
-          <h2>☁️ Cloud & Infrastructure Security</h2>
+          <h2>☁️ Cloud &amp; Infrastructure Security</h2>
 
           <h3>1. Secure AWS VPC with Terraform</h3>
           <p>A production-inspired AWS VPC build focused on <strong>segmentation, least privilege, and guardrails</strong>.</p>
 
           <p><strong>Highlights:</strong></p>
           <ul>
-            <li>Public & private subnets with controlled ingress</li>
+            <li>Public &amp; private subnets with controlled ingress</li>
             <li>NAT/IGW separation and routing</li>
-            <li>Security group & NACL rules hardened around least privilege</li>
+            <li>Security group &amp; NACL rules hardened around least privilege</li>
             <li>Baseline segmentation for future workloads</li>
           </ul>
 
@@ -389,7 +398,7 @@
 
           <p><strong>Used for:</strong></p>
           <ul>
-            <li>Network & firewall sanity checks</li>
+            <li>Network &amp; firewall sanity checks</li>
             <li>Training new analysts/engineers</li>
             <li>Building intuition around secure configurations</li>
           </ul>
@@ -429,7 +438,7 @@
 
           <ul>
             <li>Container image scanning (Trivy/Snyk)</li>
-            <li>Dependency-level risk checks for Python & containers</li>
+            <li>Dependency-level risk checks for Python &amp; containers</li>
             <li>Advanced AWS monitoring/logging pipelines</li>
           </ul>
 
