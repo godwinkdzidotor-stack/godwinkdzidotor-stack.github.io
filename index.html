@@ -85,12 +85,34 @@
       z-index: 1;
     }
 
-    /* Top bar: links out to GitHub / LinkedIn */
-    .top-bar {
+    /* TOP NAV BAR: nav in center, external buttons right */
+    .top-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+      width: 100%;
+    }
+
+    .nav-left {
+      width: 20%;
+    }
+
+    .nav-center {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav-right {
+      width: 20%;
       display: flex;
       justify-content: flex-end;
       gap: 10px;
-      margin-bottom: 14px;
+      flex-wrap: wrap;
     }
 
     .pill-btn {
@@ -198,13 +220,6 @@
     }
 
     /* Nav chips (Home / Projects / Skills / About / Contact) */
-    .nav-chips {
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 18px;
-    }
-
     .nav-chip {
       font-size: 0.82rem;
       padding: 6px 12px;
@@ -313,7 +328,20 @@
       font-size: 0.85rem;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
+      .top-nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-left,
+      .nav-center,
+      .nav-right {
+        width: 100%;
+        justify-content: center;
+      }
+      .nav-right {
+        justify-content: center;
+      }
       .header-row {
         align-items: flex-start;
       }
@@ -326,15 +354,29 @@
     <div class="panel">
       <div class="panel-inner">
 
-        <!-- Top-right external links -->
-        <div class="top-bar">
-          <a href="https://github.com/godwinkdzidotor-stack" class="pill-btn">
-            View GitHub Profile
-          </a>
-          <a href="https://www.linkedin.com/in/godwin-k-dzidotor-phd-36096a234/"
-             class="pill-btn linkedin" target="_blank" rel="noopener noreferrer">
-            Connect on LinkedIn
-          </a>
+        <!-- Top nav: centered Home/Projects/Skills/About/Contact + external buttons -->
+        <div class="top-nav">
+          <div class="nav-left">
+            <!-- empty for now; keeps layout balanced -->
+          </div>
+
+          <div class="nav-center">
+            <span class="nav-chip active">Home</span>
+            <a href="https://godwinkdzidotor-stack.github.io/projects" class="nav-chip">Projects</a>
+            <a href="https://godwinkdzidotor-stack.github.io/skills" class="nav-chip">Skills</a>
+            <a href="https://godwinkdzidotor-stack.github.io/about" class="nav-chip">About</a>
+            <a href="https://godwinkdzidotor-stack.github.io/contact" class="nav-chip">Contact</a>
+          </div>
+
+          <div class="nav-right">
+            <a href="https://github.com/godwinkdzidotor-stack" class="pill-btn">
+              View GitHub Profile
+            </a>
+            <a href="https://www.linkedin.com/in/godwin-k-dzidotor-phd-36096a234/"
+               class="pill-btn linkedin" target="_blank" rel="noopener noreferrer">
+              Connect on LinkedIn
+            </a>
+          </div>
         </div>
 
         <!-- Header -->
@@ -365,15 +407,6 @@
           <img src="https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd/actions/workflows/devsecops.yml/badge.svg" alt="CI Badge" />
           <img src="https://img.shields.io/badge/Bandit-SAST%20Scan-green?logo=python&logoColor=white" alt="Bandit SAST" />
           <img src="https://img.shields.io/badge/Docker-Builds%20Clean-blue?logo=docker&logoColor=white" alt="Docker Build Clean" />
-        </div>
-
-        <!-- Main nav chips -->
-        <div class="nav-chips">
-          <span class="nav-chip active">Home</span>
-          <a href="https://godwinkdzidotor-stack.github.io/projects" class="nav-chip">Projects</a>
-          <a href="https://godwinkdzidotor-stack.github.io/skills" class="nav-chip">Skills</a>
-          <a href="https://godwinkdzidotor-stack.github.io/about" class="nav-chip">About</a>
-          <a href="https://godwinkdzidotor-stack.github.io/contact" class="nav-chip">Contact</a>
         </div>
 
         <!-- Repo microsite buttons -->
