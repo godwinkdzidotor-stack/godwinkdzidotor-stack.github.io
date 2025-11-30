@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Godwin K. Dzidotor, PhD | Cybersecurity & DevSecOps Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Cybersecurity & DevSecOps portfolio of Godwin K. Dzidotor, PhD — Cloud Security, Network Security, Automation, and Security Engineering labs."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #020617;
+      --panel: radial-gradient(circle at top left, #0f172a 0, #020617 55%);
+      --accent: #22c55e;
+      --accent-soft: rgba(34, 197, 94, 0.18);
+      --accent-strong: #4ade80;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --link: #38bdf8;
+      --border-subtle: #1f2937;
+      --chip-bg: #020617;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #0b1120 0, #020617 55%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 32px 12px 40px;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .shell {
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    .panel {
+      background: var(--panel);
+      border-radius: 30px;
+      padding: 18px 22px 24px;
+      box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.85),
+        0 32px 80px rgba(15, 23, 42, 0.95);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: -80px;
+      background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.18), transparent 55%);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .panel-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Top bar: links out to GitHub / LinkedIn */
+    .top-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .pill-btn {
+      border-radius: 999px;
+      padding: 7px 14px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.8);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.18s ease, box-shadow 0.18s ease,
+        transform 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+    }
+
+    .pill-btn:hover {
+      background: #020617;
+      box-shadow: 0 0 18px rgba(148, 163, 184, 0.55);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .pill-btn.linkedin {
+      border-color: #0ea5e9;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .identity {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #22c55e, #0f172a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #0b1120;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      flex-shrink: 0;
+    }
+
+    .identity-main h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      letter-spacing: 0.03em;
+      color: var(--text-main);
+    }
+
+    .identity-main p {
+      margin: 4px 0 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    .tag-pill {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--text-muted);
+    }
+
+    .tag-pill.primary {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+    }
+
+    .page-title {
+      margin: 0 0 4px;
+      font-size: 1.7rem;
+      color: var(--accent-strong);
+    }
+
+    .subtitle {
+      margin: 0 0 12px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* Nav chips (Home / Projects / Skills / About / Contact) */
+    .nav-chips {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .nav-chip {
+      font-size: 0.82rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: 0.18s ease;
+    }
+
+    .nav-chip:hover {
+      background: #020617;
+      color: var(--text-main);
+      box-shadow: 0 0 14px rgba(148, 163, 184, 0.6);
+    }
+
+    .nav-chip.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+      box-shadow: 0 0 18px rgba(34, 197, 94, 0.7);
+    }
+
+    /* Repo microsite buttons */
+    .micro-link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0 6px;
+    }
+
+    .micro-link {
+      font-size: 0.85rem;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.9);
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.18s ease;
+    }
+
+    .micro-link span.icon {
+      font-size: 1rem;
+    }
+
+    .micro-link:hover {
+      background: #020617;
+      box-shadow: 0 0 18px rgba(148, 163, 184, 0.7);
+      transform: translateY(-1px);
+    }
+
+    /* Badges row (DevSecOps / Bandit / Docker) */
+    .badge-row {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+      margin-top: 6px;
+    }
+
+    .badge-row img {
+      height: 20px;
+    }
+
+    /* Content sections inside card */
+    .section {
+      background: rgba(15, 23, 42, 0.92);
+      border-radius: 20px;
+      padding: 18px 22px 16px;
+      border: 1px solid rgba(31, 41, 55, 0.95);
+      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.9);
+      margin-top: 16px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.15rem;
+      color: var(--accent-strong);
+    }
+
+    .section h3 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .section p,
+    .section li {
+      font-size: 0.94rem;
+      line-height: 1.7;
+    }
+
+    .section ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+
+    .repo-link {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .header-row {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <div class="panel">
+      <div class="panel-inner">
+
+        <!-- Top-right external links -->
+        <div class="top-bar">
+          <a href="https://github.com/godwinkdzidotor-stack" class="pill-btn">
+            View GitHub Profile
+          </a>
+          <a href="https://www.linkedin.com/in/godwin-k-dzidotor-phd-36096a234/"
+             class="pill-btn linkedin" target="_blank" rel="noopener noreferrer">
+            Connect on LinkedIn
+          </a>
+        </div>
+
+        <!-- Header -->
+        <div class="header-row">
+          <div class="identity">
+            <div class="avatar">GD</div>
+            <div class="identity-main">
+              <h1>Godwin K. Dzidotor, PhD</h1>
+              <p>Cybersecurity Engineer • DevSecOps • Cloud Security • Network Security</p>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <div class="tag-pill primary">Hands-on Security Engineering Portfolio</div>
+            <div class="tag-pill">AWS • Terraform • Ansible</div>
+            <div class="tag-pill">Python Automation</div>
+          </div>
+        </div>
+
+        <h2 class="page-title">Cybersecurity &amp; DevSecOps Portfolio</h2>
+        <p class="subtitle">
+          Building secure, automated, and resilient systems at the intersection of cybersecurity,
+          cloud, and infrastructure engineering.
+        </p>
+
+        <!-- CI / SAST / Docker badges -->
+        <div class="badge-row">
+          <img src="https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd/actions/workflows/devsecops.yml/badge.svg" alt="CI Badge" />
+          <img src="https://img.shields.io/badge/Bandit-SAST%20Scan-green?logo=python&logoColor=white" alt="Bandit SAST" />
+          <img src="https://img.shields.io/badge/Docker-Builds%20Clean-blue?logo=docker&logoColor=white" alt="Docker Build Clean" />
+        </div>
+
+        <!-- Main nav chips -->
+        <div class="nav-chips">
+          <span class="nav-chip active">Home</span>
+          <a href="https://godwinkdzidotor-stack.github.io/projects" class="nav-chip">Projects</a>
+          <a href="https://godwinkdzidotor-stack.github.io/skills" class="nav-chip">Skills</a>
+          <a href="https://godwinkdzidotor-stack.github.io/about" class="nav-chip">About</a>
+          <a href="https://godwinkdzidotor-stack.github.io/contact" class="nav-chip">Contact</a>
+        </div>
+
+        <!-- Repo microsite buttons -->
+        <div class="micro-link-row">
+          <a class="micro-link" href="https://godwinkdzidotor-stack.github.io/Network-Engineering-Projects/" target="_blank" rel="noopener noreferrer">
+            <span class="icon">🌐</span> Network Engineering Projects
+          </a>
+          <a class="micro-link" href="https://godwinkdzidotor-stack.github.io/Risk-Management-Framework-Portfolio/" target="_blank" rel="noopener noreferrer">
+            <span class="icon">🛡️</span> RMF Portfolio
+          </a>
+          <a class="micro-link" href="https://godwinkdzidotor-stack.github.io/devsecops-python-ci-cd/" target="_blank" rel="noopener noreferrer">
+            <span class="icon">⚙️</span> DevSecOps Python CI/CD
+          </a>
+          <a class="micro-link" href="https://godwinkdzidotor-stack.github.io/python-network-automation/" target="_blank" rel="noopener noreferrer">
+            <span class="icon">🧪</span> Python Network Automation
+          </a>
+          <a class="micro-link" href="https://godwinkdzidotor-stack.github.io/ansible-security-hardening/" target="_blank" rel="noopener noreferrer">
+            <span class="icon">🛠️</span> Ansible Security Hardening
+          </a>
+          <a class="micro-link" href="https://godwinkdzidotor-stack.github.io/aws-secure-vpc-terraform/" target="_blank" rel="noopener noreferrer">
+            <span class="icon">☁️</span> AWS Secure VPC (Terraform)
+          </a>
+        </div>
+
+        <!-- Sections: Portfolio Overview + Featured -->
+        <div class="section">
+          <h2>🔐 Portfolio Overview</h2>
+          <p>This portfolio showcases <strong>hands-on security engineering work</strong> across:</p>
+          <ul>
+            <li><strong>Cloud Security (AWS)</strong></li>
+            <li><strong>DevSecOps &amp; CI/CD automation</strong></li>
+            <li><strong>Static Application Security Testing (SAST)</strong> with Bandit</li>
+            <li><strong>Infrastructure-as-Code security</strong> (Terraform, Ansible)</li>
+            <li><strong>Python security tooling &amp; network automation</strong></li>
+          </ul>
+          <p>
+            Each project includes real code, pipelines, security outputs, and documentation —
+            demonstrating how I think about secure design, implementation, and operations.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>🧩 Featured Security Projects</h2>
+
+          <h3>Secure AWS VPC with Terraform</h3>
+          <p>
+            A production-style AWS VPC with public/private subnets, NAT/IGW separation,
+            hardened SG/NACL rules, and opinionated segmentation baselines.
+          </p>
+          <p class="repo-link">
+            Repo: <a href="https://github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform" target="_blank">
+              github.com/godwinkdzidotor-stack/aws-secure-vpc-terraform
+            </a>
+          </p>
+
+          <h3>Linux Security Hardening with Ansible</h3>
+          <p>
+            Automated OS hardening for SSH, firewall, PAM, and services — translating CIS/STIG-style
+            checklists into idempotent Ansible roles.
+          </p>
+          <p class="repo-link">
+            Repo: <a href="https://github.com/godwinkdzidotor-stack/ansible-security-hardening" target="_blank">
+              github.com/godwinkdzidotor-stack/ansible-security-hardening
+            </a>
+          </p>
+
+          <h3>Python Network Security Automation</h3>
+          <p>
+            Lightweight tools for firewall rule hygiene and subnet reachability checks, useful for
+            labs, posture reviews, and teaching.
+          </p>
+          <p class="repo-link">
+            Repo: <a href="https://github.com/godwinkdzidotor-stack/python-network-automation" target="_blank">
+              github.com/godwinkdzidotor-stack/python-network-automation
+            </a>
+          </p>
+
+          <h3>DevSecOps Python CI/CD Pipeline</h3>
+          <p>
+            A full pipeline that runs syntax checks, Bandit SAST, tests, and Docker builds on every push,
+            with security reports as artifacts.
+          </p>
+          <p class="repo-link">
+            Repo: <a href="https://github.com/godwinkdzidotor-stack/devsecops-python-ci-cd" target="_blank">
+              github.com/godwinkdzidotor-stack/devsecops-python-ci-cd
+            </a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
