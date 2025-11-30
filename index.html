@@ -155,6 +155,7 @@
       display: flex;
       gap: 14px;
       align-items: center;
+      flex: 1 1 260px;
     }
 
     .avatar {
@@ -184,27 +185,43 @@
       color: var(--text-muted);
     }
 
-    .tag-row {
+    /* RIGHT HERO – gradient background + circle portrait */
+    .hero-right {
+      flex: 1 1 260px;
+      min-height: 140px;
+      border-radius: 20px;
+      background: radial-gradient(circle at top left, #0f172a, #020617 60%);
+      border: 1px solid rgba(31, 41, 55, 0.95);
+      box-shadow:
+        inset 0 0 0 1px rgba(15, 23, 42, 0.9),
+        0 0 32px rgba(15, 23, 42, 0.9);
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: flex-end;
-      align-items: flex-start;
+      align-items: center;
+      justify-content: flex-end;           /* push circle toward the right */
+      padding: 20px 24px 20px 20px;        /* small gap from right edge */
+      position: relative;
+      overflow: hidden;
     }
 
-    .tag-pill {
-      font-size: 0.75rem;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(148, 163, 184, 0.5);
-      color: var(--text-muted);
+    .hero-right::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.22), transparent 60%);
+      pointer-events: none;
     }
 
-    .tag-pill.primary {
-      border-color: var(--accent);
-      background: var(--accent-soft);
-      color: var(--accent-strong);
+    .portrait-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: url("assets/godwin-hero.jpg");
+      background-size: cover;
+      background-position: center;
+      border: 5px solid #ffffff;
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+      position: relative;
+      z-index: 2;
     }
 
     .page-title {
@@ -306,6 +323,11 @@
     @media (max-width: 900px) {
       .header-row {
         align-items: flex-start;
+        flex-direction: column;
+      }
+      .hero-right {
+        min-height: 180px;
+        justify-content: center;
       }
     }
   </style>
@@ -352,22 +374,19 @@
             <div class="avatar">GD</div>
             <div class="identity-main">
               <h1>Godwin K. Dzidotor, PhD</h1>
-              <p>
-                
-              </p>
+              <p>Cybersecurity Engineer • DevSecOps • Cloud Security • Network Security</p>
             </div>
           </div>
 
-          <div class="tag-row">
-            <div class="tag-pill primary">Hands-on Security Engineering Portfolio</div>
-            <div class="tag-pill">AWS • Terraform • Ansible</div>
-            <div class="tag-pill">Python Automation</div>
+          <div class="hero-right">
+            <div class="portrait-circle"></div>
           </div>
         </div>
 
         <h2 class="page-title">Cybersecurity &amp; DevSecOps Portfolio</h2>
         <p class="subtitle">
-          
+          Building secure, automated, and resilient systems at the intersection of cybersecurity,
+          cloud, and infrastructure engineering.
         </p>
 
         <!-- CI / SAST / Docker badges -->
