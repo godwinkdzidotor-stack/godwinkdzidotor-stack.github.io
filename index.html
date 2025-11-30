@@ -155,7 +155,6 @@
       display: flex;
       gap: 14px;
       align-items: center;
-      flex: 1 1 260px;
     }
 
     .avatar {
@@ -185,30 +184,13 @@
       color: var(--text-muted);
     }
 
-    /* RIGHT HERO – gradient background + circle portrait */
+    /* RIGHT-SIDE PORTRAIT (circle only, no rectangle) */
     .hero-right {
       flex: 1 1 260px;
-      min-height: 140px;
-      border-radius: 20px;
-      background: radial-gradient(circle at top left, #0f172a, #020617 60%);
-      border: 1px solid rgba(31, 41, 55, 0.95);
-      box-shadow:
-        inset 0 0 0 1px rgba(15, 23, 42, 0.9),
-        0 0 32px rgba(15, 23, 42, 0.9);
       display: flex;
+      justify-content: flex-end;   /* pushes circle toward the right edge */
       align-items: center;
-      justify-content: flex-end;           /* push circle toward the right */
-      padding: 20px 24px 20px 20px;        /* small gap from right edge */
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-right::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.22), transparent 60%);
-      pointer-events: none;
+      padding-right: 16px;         /* tweak this value to move a bit left/right */
     }
 
     .portrait-circle {
@@ -220,8 +202,6 @@
       background-position: center;
       border: 5px solid #ffffff;
       box-shadow: 0 0 25px rgba(0,0,0,0.4);
-      position: relative;
-      z-index: 2;
     }
 
     .page-title {
@@ -323,11 +303,11 @@
     @media (max-width: 900px) {
       .header-row {
         align-items: flex-start;
-        flex-direction: column;
       }
       .hero-right {
-        min-height: 180px;
         justify-content: center;
+        padding-right: 0;
+        margin-top: 8px;
       }
     }
   </style>
