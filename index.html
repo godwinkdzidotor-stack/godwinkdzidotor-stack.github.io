@@ -143,7 +143,6 @@
       box-shadow: 0 0 18px rgba(34, 197, 94, 0.7);
     }
 
-    /* HEADER ROW WITH PORTRAIT PANEL ON THE RIGHT */
     .header-row {
       display: flex;
       justify-content: space-between;
@@ -156,7 +155,6 @@
       display: flex;
       gap: 14px;
       align-items: center;
-      flex: 1 1 260px;
     }
 
     .avatar {
@@ -186,51 +184,12 @@
       color: var(--text-muted);
     }
 
-    /* RIGHT-HALF HERO BACKGROUND WITH YOUR PORTRAIT + TAGS */
-    .hero-right {
-      flex: 1 1 260px;
-      min-height: 110px;
-      border-radius: 20px;
-
-      /* 👇 blend dark gradient + your portrait image */
-      background-image:
-        linear-gradient(120deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.35)),
-        url("assets/godwin-hero.jpg"); /* <-- put your photo here */
-      background-size: cover;
-      background-position: center right;
-      background-repeat: no-repeat;
-      background-blend-mode: overlay;
-
-      border: 1px solid rgba(31, 41, 55, 0.95);
-      box-shadow:
-        inset 0 0 0 1px rgba(15, 23, 42, 0.9),
-        0 0 32px rgba(15, 23, 42, 0.9);
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
-      padding: 10px 14px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-right::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(
-        circle at top left,
-        rgba(34, 197, 94, 0.22),
-        transparent 60%
-      );
-      pointer-events: none;
-    }
-
-    .hero-tag-row {
-      position: relative;
-      z-index: 1;
+    .tag-row {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      justify-content: flex-end;
+      align-items: flex-start;
     }
 
     .tag-pill {
@@ -240,7 +199,6 @@
       background: rgba(15, 23, 42, 0.9);
       border: 1px solid rgba(148, 163, 184, 0.5);
       color: var(--text-muted);
-      backdrop-filter: blur(6px);
     }
 
     .tag-pill.primary {
@@ -347,10 +305,7 @@
 
     @media (max-width: 900px) {
       .header-row {
-        align-items: stretch;
-      }
-      .hero-right {
-        min-height: 130px;
+        align-items: flex-start;
       }
     }
   </style>
@@ -391,29 +346,28 @@
           </div>
         </div>
 
-        <!-- Header: identity on left, portrait+tags on right -->
+        <!-- Header -->
         <div class="header-row">
           <div class="identity">
             <div class="avatar">GD</div>
             <div class="identity-main">
               <h1>Godwin K. Dzidotor, PhD</h1>
-              <p>Cybersecurity Engineer • DevSecOps • Cloud Security • Network Security</p>
+              <p>
+                
+              </p>
             </div>
           </div>
 
-          <div class="hero-right">
-            <div class="hero-tag-row">
-              <div class="tag-pill primary">Hands-on Security Engineering Portfolio</div>
-              <div class="tag-pill">AWS • Terraform • Ansible</div>
-              <div class="tag-pill">Python Automation</div>
-            </div>
+          <div class="tag-row">
+            <div class="tag-pill primary">Hands-on Security Engineering Portfolio</div>
+            <div class="tag-pill">AWS • Terraform • Ansible</div>
+            <div class="tag-pill">Python Automation</div>
           </div>
         </div>
 
         <h2 class="page-title">Cybersecurity &amp; DevSecOps Portfolio</h2>
         <p class="subtitle">
-          Building secure, automated, and resilient systems at the intersection of cybersecurity,
-          cloud, and infrastructure engineering.
+          
         </p>
 
         <!-- CI / SAST / Docker badges -->
